@@ -16,24 +16,15 @@
   border-radius: 5px;
 }
 
-input {
-  outline: none;
-  display: block;
-  height: 30px;
-  border: none;
-  text-align: center;
-  border-radius: 4px;
-}
-
 .recalculate-form__input-label {
   padding-bottom: 10px;
   text-align: center;
   line-height: 1.8rem;
   color: #fff;
-}
 
-.recalculate-form__input-label:last-of-type {
-  padding-bottom: 0;
+  &:last-of-type {
+    padding-bottom: 0;
+  }
 }
 
 .recalculate-form__submit-button {
@@ -46,11 +37,20 @@ input {
   padding: 10px;
   text-transform: uppercase;
   margin-top: 5px;
+
+  &:hover {
+    background-color: #f57e1a;
+    opacity: 0.9;
+  }
 }
 
-.recalculate-form__submit-button:hover {
-  background-color: #f57e1a;
-  opacity: 0.9;
+input {
+  outline: none;
+  display: block;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .input_disabled {
@@ -60,10 +60,11 @@ input {
 .submit_disabled {
   background-color: #aaa;
   cursor: default;
+
+  &:hover {
+    background-color: #aaa;
+    cursor: default;
+    opacity: 0.9;
+  }
 }
 
-.submit_disabled:hover {
-  background-color: #aaa;
-  cursor: default;
-  opacity: 0.9;
-}
