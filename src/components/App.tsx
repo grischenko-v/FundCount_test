@@ -21,9 +21,6 @@ class App extends React.Component<any, any> {
         submitDisabled: true
 
       };
-    // this.handleCalendarChange = this.handleCalendarChange.bind(this);
-    // this.handleInputChange = this.handleInputChange.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
   };
 
 
